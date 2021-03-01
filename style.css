@@ -1,0 +1,62 @@
+body, html {
+  margin: 0;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.2em;
+}
+
+
+.grid-container {
+display:grid;
+grid-template-columns: 20vw auto;
+}
+
+.upper-nav {
+  grid-column: span 2;
+  display: flex;
+}
+
+.nav-item-container {
+  width:100%;
+  display: flex;
+  justify-content: flex-end;}
+
+.side-nav {grid-column-end: 2;}
+.content {grid-column-start: 2;}
+.footer{grid-column: span 2;}
+
+
+
+
+.nav-item {
+  margin-right:2em;
+}
+
+.outlines {
+  border: 1px solid black;
+  margin:5px;
+  height: 100px;
+  text-align: center;
+  padding: 40px;
+
+}
+
+
+.logo {
+height: 120px;
+width:100%;
+background-image: url("img/logo.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+/* This is where you can add in special rules for different device sizes */
+@media screen and (max-width:700px){
+
+  .grid-container {
+    display:block;
+  }
+
+  .nav-item-container{
+    display:block;
+  }
+}
